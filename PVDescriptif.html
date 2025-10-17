@@ -6,16 +6,36 @@
   <style>
     body {
       font-family: "Helvetica", "Arial", sans-serif;
-      margin: 40px auto;
-      max-width: 800px;
-      line-height: 1.6;
+      margin: 30px auto;
+      max-width: 1000px;
+      line-height: 1.4;
       color: #333;
     }
     a { color: #1a73e8; text-decoration: none; }
     a:hover { color: #0b47a1; }
-    h1 { font-size: 1.8em; margin-bottom: 0.2em; }
-    h2 { font-style: italic; color: #555; margin-top: 0; margin-bottom: 1em; }
-    p { text-align: justify; }
+    h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.2em;
+    margin-left: 0;       /* base level, no indentation */
+}
+
+h2 {
+    font-style: italic;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-left: 1cm;     /* indented 1 cm relative to h1 */
+}
+
+h3 {
+    font-weight: normal;
+    color: #666;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5cm;     /* indented 1 cm relative to h2 (total 2 cm from left) */
+}
+
+    p { text-align: justify; margin-left: 1.3cm;}
     .back { margin-top: 2em; display: block; }
   </style>
 </head>
@@ -30,15 +50,15 @@
     </p>
   <h3>Commentaire</h2>
   <p>
-  <a href="PhotoVolt.html">Societe Eurowind</a>
+  Informations sur la <a href="PhotoVolt.html">Societe Eurowind</a>
   </p>
   <p>
   <a href="PhotoVolt.html">L'Agrivoltaïque</a>
   </p>
   <p>
-  <a href="PhotoVolt.html">Altenatives</a>
+  <a href="PhotoVolt.html">Alternatives</a>
   </p>
 
-  <a href="index.html" class="back">← Retour à la page d’accueil</a>
+  <a href="index.html" class="back">.← Retour à la page d’accueil</a>
 </body>
 </html>
