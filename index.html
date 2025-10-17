@@ -6,83 +6,96 @@
   <style>
     body {
       font-family: "Helvetica", "Arial", sans-serif;
-      text-align: center;
       margin: 30px auto;
       max-width: 1000px;
       line-height: 1.4;
       color: #333;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
+
     h1 {
       font-size: 2em;
       margin-bottom: 0.2em;
+      text-align: center;
     }
-    h2 {
+
+
+    h3 {
       font-style: italic;
       font-weight: normal;
       color: #555;
-      margin-top: 0;
-      margin-bottom: 1.5em;
+      text-align: center;
+      margin-top: 0.6cm;
+      margin-bottom: 2.0em;
     }
+
     p {
       font-size: 1em;
       text-align: justify;
       margin: 1em 0;
     }
-    .links {
-      margin-top: 2em;
-    }
-    .links a {
-      display: block;
-      color: #1a73e8;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0.5em 0;
-      transition: color 0.2s;
-    }
-    .links a:hover {
-      color: #0b47a1;
+
+    /* Container for links + image */
+    .content-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; /* center the whole row */
+  flex-wrap: wrap;
+  gap: 20px; /* space between links and image */
+}
+
+/* Links column moves 1cm left */
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 200px;
+  margin-left: -1cm; /* shift 1 cm to the left */
+}
+
+/* Image moves 0.5 cm right */
+.content-row img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-left: 2cm; /* shift 0.5 cm right */
+}
+
     }
   </style>
 </head>
 <body>
 
- <!-- Title and subtitle -->
+  <!-- Title and subtitle -->
   <h1>Le Pays de Jours</h1>
   <h3>Mieux comprendre les projets environnementaux autour de Jours et leur impact sur notre vallée.</h3>
 
-  <!-- Picture placeholder -->
-  <img src="Jours1.jpeg" alt="Photo du Pays de Jours">
+  <!-- Links and picture side by side -->
+  <div class="content-row">
+    <!-- Links on the left -->
+    <div class="links">
+<p>
+</p>
+      <a href="PVDescriptif.html">Projet Agrivoltaïque Guichotte</a>
+<p>
+</p>
+      <a href="page2.html">Titre du projet 2</a>
+<p>
+</p>
+      <a href="page3.html">Titre du projet 3</a>
+<p>
+</p>
+      <a href="page4.html">Titre du projet 4</a>
+      
+    </div>
 
- 
-  <!-- Text placeholder -->
+    <!-- Picture on the right -->
+    <img src="Jours1.jpeg" alt="Photo du Pays de Jours">
+  </div>
+
+  <!-- Text placeholder below -->
   <p>
-    Voici une liste des projets prévus dans notre région, accompagnée de quelques commentaires.
+    
   </p>
 
-  <!-- Placeholder for future links -->
-  <div class="links">
-    <a href="PVDescriptif.html">Projet Agrivoltaïque Guichotte</a>
-    <a href="page2.html">Titre du projet 2</a>
-    <a href="page3.html">Titre du projet 3</a>
-    <a href="page4.html">Titre du projet 4</a>
-    <a href="page5.html">Titre du projet 5</a>
-  </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
