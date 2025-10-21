@@ -2,109 +2,118 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Le Pays de Jours</title>
+  <title>Parc Photovoltaïque à Jours</title>
   <style>
     body {
       font-family: "Helvetica", "Arial", sans-serif;
-      margin: 30px auto;
-      max-width: 1000px;
-      line-height: 1.4;
-      color: #333;
+      text-align: center;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 40px;
+      color: #000;
     }
 
     h1 {
-      font-size: 2em;
-      margin-bottom: 0.2em;
-      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
     }
 
-
-    h3 {
-      font-style: italic;
-      font-weight: normal;
-      color: #555;
-      text-align: center;
-      margin-top: 0.6cm;
-      margin-bottom: 2.0em;
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      margin-bottom: 30px;
     }
 
-    p {
-      font-size: 1em;
-      text-align: justify;
-      margin: 1em 0;
+    .image-box {
+      position: relative;
     }
 
-    /* Container for links + image */
-    .content-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center; /* center the whole row */
-  flex-wrap: wrap;
-  gap: 20px; /* space between links and image */
-}
+    .image-box img {
+      width: 420px;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
 
-/* Links column moves 1cm left */
-.links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-width: 200px;
-  margin-left: -1cm; /* shift 1 cm to the left */
-}
+    .label {
+      position: absolute;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
 
-/* Image moves 0.5 cm right */
-.content-row img {
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  margin-left: 2cm; /* shift 0.5 cm right */
-}
+    .label.left {
+      top: 8px;
+      left: 8px;
+    }
 
+    .label.right {
+      top: 8px;
+      right: 8px;
+    }
+
+    .main-text {
+      font-size: 18px;
+      line-height: calc(1.6em + 3px);
+      margin: 0 auto 40px auto;
+      max-width: 800px;
+    }
+
+    .main-text strong {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 20px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background-color: #444;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #777;
     }
   </style>
 </head>
 <body>
+  <h1>Parc Photovoltaïque à Jours</h1>
 
-  <!-- Title and subtitle -->
-  <h1>Le Pays de Jours</h1>
-  <h3>Mieux comprendre le projet agrivoltaïque Guichotte et son impact sur notre vallée.</h3>
-
-  <p>
-</p>
-     Le projet Agrivoltaïque Guichotte, proposé par la société danoise Eurowind Energy, aura un impact considérable sur notre village et ses environs. Ce site a pour objectif de fournir aux habitants des informations claires et factuelles sur le projet, son ampleur et ses effets potentiels sur notre communauté, notre environnement et notre vie quotidienne.
-<p>
-
-
-  <!-- Links and picture side by side -->
-  <div class="content-row">
-    <!-- Links on the left -->
-    <div class="links">
-<p>
-</p>
-      <a href="PVDescriptif.html">Présentation Projet Agrivoltaïque Guichotte</a>
-<p>
-</p>
-      <a href="PVDescriptif.html">Avantages et inconvenients</a>
-<p>
-    -->
+  <div class="image-container">
+    <div class="image-box">
+      <img src="Jours21.jpeg" alt="Aujourd'hui">
+      <div class="label left">Aujourd’hui</div>
     </div>
-
-    <!-- Picture on the right -->
-    <img src="Jours1.jpeg" alt="Photo du Pays de Jours">
+    <div class="image-box">
+      <img src="Jours23.jpeg" alt="Demain ?">
+      <div class="label right">Demain ?</div>
+    </div>
   </div>
 
-  <!-- Text placeholder below -->
-  <p>
-    
-  </p>
+  <div class="main-text">
+    <p>Une société danoise projette d’implanter un parc de panneaux solaires dits « agrivoltaïques » sur</p>
+    <p><strong>212 hectares = 297 terrains de football</strong></p>
+    <p>aux abords de Jours-lès-Baigneux et Chaume-lès-Baigneux.</p>
+  </div>
 
+  <div class="buttons">
+    <a href="details.html">Détails du projet</a>
+    <a href="action.html">Que faire ?</a>
+  </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
