@@ -41,31 +41,67 @@ h3 {
 strong {
   font-weight: bold;
   text-decoration: underline;
+color: red;
 }
+
+/* Grid container for the buttons */
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+            gap: 20px; /* Space between buttons */
+            margin-top: 20px;
+        }
+
+/* Styling for the clickable buttons (anchors styled as buttons) */
+        .button {
+            text-decoration: none; /* Remove underline from links */
+            color: white; /* Text color */
+            background-color: #3b5998; /* Blue background color similar to the image */
+            padding: 15px 10px;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: normal;
+            display: block; /* Make the anchor take up the full grid cell */
+            text-align: center;
+            line-height: 1.4; /* Better spacing for multi-line text */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #4c69a9; /* Slightly lighter blue on hover */
+		color: yellow;
+        }
+
+
+
   </style>
 </head>
+
+
 <body>
+   <div class="container">
+ 
   <h1>Projet Agrivoltaïque Guichotte</h1>
   <h3>Porteur du projet</h2>
    <p>
-    <a href="https://www.projetseurowindenergy.fr/nos-parcs/projet-agrivolta%C3%AFque-de-guichotte/"> Eurowind Energy A/S</a>, une société <strong>danoise</strong>, envisage d’implanter plus de <a href="600Kpanneaux.html">600,000 panneaux photovoltaïques</a> autour de Jours. <a href="https://eurowindenergy.com/">Plus d’infos sur Eurowind Energy</a>
+    <a href="https://www.projetseurowindenergy.fr/nos-parcs/projet-agrivolta%C3%AFque-de-guichotte/"> Eurowind Energy A/S</a>, une société <strong>danoise</strong>, envisage d’implanter plus de <a href="600Kpanneaux.html">600,000 panneaux photovoltaïques</a> autour de Jours. <a href="https://example.com" target="_blank" rel="noopener noreferrer">Plus d’infos sur Eurowind Energy</a>
   </p>
  
   
-  <h3>Quelques aspects problématiques</h2>
-  <p>
-  1. L’électricité solaire n’est pas produite quand on en a le plus besoin. Le soir, les panneaux dorment.
-  <a href="Stockage.html" target="_blank" rel="noopener noreferrer">En savoir plus → Production et stockage de l’énergie solaire.</a>
-  </p>
-  <p>
-  2. Un projet « vert » ? <a href="PhotoVolt.html">En savoir plus → Impact écologique des parcs photovoltaïques.</a>
-  </p>
-  <p>
-  3. L’argent part ailleurs, pas dans nos villages. Les profits vont aux investisseurs, pas aux habitants.<a href="PhotoVolt.html"> En savoir plus → Qui gagne quoi dans ces projets?</a>
-  </p>
-  <p>
-  4. L’agrivoltaïsme, belle idée sur le papier, difficile sur le terrain.  <a href="PhotoVolt.html">En savoir plus → Agrivoltaïsme : mythe ou réalité?</a>
-  </p>
+  <h3>Questions à poser :-</h2>
+  
+
+        <div class="button-grid">
+            <a href="Stockage.html" class="button">L’électricité solaire n’est pas produite quand on en a le plus besoin.</a>
+            <a href="profits-etrangers-1.html" class="button">Les profits vont aux investisseurs étrangers</a>
+            <a href="profits-etrangers-2.html" class="button">Impact écologique des parcs photovoltaïques.</a>
+
+            <a href="agrivoltaisme-mythe-ou-realite-1.html" class="button">Qui va nettoyer à la fin de la vie du projet?</a>
+            <a href="agrivoltaisme-mythe-ou-realite-2.html" class="button">Agrivoltaïsme : mythe ou réalité?</a>
+            <a href="profits-etrangers-1.html" class="button">Les profits vont aux investisseurs étrangers</a>
+           
+        </div>
   
 <h3>Que faire?</h2>
   <p>
@@ -77,5 +113,6 @@ strong {
   </p>
 
   <a href="index.html" class="back">...← Retour à la page d’accueil</a>
+
 </body>
 </html>
